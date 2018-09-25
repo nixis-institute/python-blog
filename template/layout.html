@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+        <body>
+            <div class="header">
+                <div style="text-align: center; background-color: red;"
+            <font face = "Comic sans MS" size =" 5"><h1>BLOG</h1></font><br />
+            <a href="/"> home </a>
+            <a href="/about"> about </a>
+           
+                </div>
+            </div>
+            <div class="main">
+                {%block main%}
+                {%endblock%}
+            </div>
+            <div class="footer">
+            </div>
+        </body>
+    </head>
+</html>
