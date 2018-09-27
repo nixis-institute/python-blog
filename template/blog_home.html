@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+
+{% block main %}
+
+{% for i in blog %}
+    <h2><a href="/blog/{{i.id}}">{{i.title}}</a></h2>
+    <p>{{i.body}}</p>
+    {% endfor %}
+{% endblock %}

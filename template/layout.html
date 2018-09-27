@@ -1,15 +1,17 @@
+{% load static %}
 <html>
     <head>
+        <link rel="stylesheet" href="{% static 'bootstrap.css' %}">
         <title>
             {% block title %}
             {% endblock %}
         </title>
         <body>
             <div class="header">
-                <div style="text-align: center; background-color: red;"
+                <div style="text-align: center; background-color: seashell;"
             <font face = "Comic sans MS" size =" 5"><h1>BLOG</h1></font><br />
             <a href="/"> home </a>
-            <a href="/about"> about </a>
+            <a href="/create"> create </a>
            
                 </div>
             </div>
