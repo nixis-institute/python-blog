@@ -4,5 +4,18 @@ home page
 {% endblock %}
 {% block main %}
 
-<h1> this is a about page </h1>
+<h1> this is a about page </h1> 
+<form name= "form" action="/post_blog"method="post">
+{% csrf_token %}
+<label> title </label>
+<input type ="text" name="title"/> <br>
+<label> body </label>
+<input type ="text" name =" bpdy"/> <br>
+<label>Email</label>
+<input type="text" name="email" /><br>
+<label>Phone</label>
+<input type="text" name="phone" /><br>
+<input type="submit" value="post" />
+
+</form>
 {% endblock %}

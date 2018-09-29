@@ -28,6 +28,4 @@ def post(request):
     p = request.POST.get('phone',)
 
     blog.objects.create(title=t,body=b,email=e,phone=p)
-    
-
     return HttpResponseRedirect("/")
